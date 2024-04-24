@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Checkers Game
 
 ## Getting Started
 
@@ -16,25 +16,40 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/components/Board/Board.tsx` to start developing app.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Technologies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Toast](https://fkhadra.github.io/react-toastify/introduction)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- [x] Board with 8x8 squares
+- [x] Movement for each checker piece
+- [x] Jump for each piece
+- [x] Turn for each player
+- [x] Win condition for each player
+- [x] Lose condition for each player
+- [x] Draw condition for each player
+- [x] Toast for each player win, lose or draw, and for each invalid movement or jump
 
-To learn more about Next.js, take a look at the following resources:
+## Future Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Create a movement for the king piece
+- [ ] Create a jump for the king piece
+- [ ] Possibility of multiple checker blows if possible
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+- Click on the piece you want to move
+- Click on the square you want to move the piece to
+- If you can jump, click on the square you want to jump to
+- If you want to cancel the movement, click on the piece again or click on Right Mouse Button
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Screenshotes:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Checkers](https://i2.paste.pics/baf3cb382da677829795828e6c828d51.png)
